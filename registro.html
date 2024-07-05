@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Registro de clientes</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="registro">
+            <h1>Registro de clientes</h1>
+            <form action="" class="formulario" id="formulario">
+                <div class="inputgroup">
+                    <!-- Grupo: cedula -->
+                    <div class="formulario__grupo" id="grupo__cedula">
+                        <div class="formulario__grupo-input">
+                            <i class="fa-solid fa-id-card"></i>
+                            <input type="text" class="formulario__input" name="cedula" id="cedula"
+                                placeholder="Ingrese el número de cédula">
+                        </div>
+                        <p class="formulario__input-error">El número de cédula debe debe de tener 10 digitos</p>
+                        <p class="formulario__input-error2">Ingrese un número de cédula que no haya sido ingresado</p>
+
+                    </div>
+                    <!-- Grupo: Apellidos -->
+                    <div class="formulario__grupo" id="grupo__apellidos">
+                        <div class="formulario__grupo-input">
+                            <i class="fa-solid fa-signature"></i>
+                            <input type="text" class="formulario__input" name="apellidos" id="apellidos"
+                                placeholder="Ingrese los apellidos">
+                        </div>
+                        <p class="formulario__input-error">Los apellidos solo pueden contener letras, espacios y acentos</p>
+                    </div>
+                    <!-- Grupo: Nombres -->
+                    <div class="formulario__grupo" id="grupo__nombres">
+                        <div class="formulario__grupo-input">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" class="formulario__input" name="nombres" id="nombres"
+                                placeholder="Ingrese los nombres">
+                        </div>
+                        <p class="formulario__input-error">Los nombres solo pueden contener letras, espacios y acentos</p>
+                    </div>
+                    <!-- Grupo: Direccion -->
+                    <div class="formulario__grupo" id="grupo__direccion">
+                        <div class="formulario__grupo-input">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text" class="formulario__input" name="direccion" id="direccion"
+                                placeholder="Ingrese la dirección">
+                        </div>
+                        <p class="formulario__input-error">Ingrese una direccion valida</p>
+                    </div>
+                    <!-- Grupo: Telefono -->
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <div class="formulario__grupo-input">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" class="formulario__input" name="telefono" id="telefono"
+                                placeholder="Ingrese un número de télefono">
+                        </div>
+                        <p class="formulario__input-error">El numero de celular debe de empezar con 9 y debe de tener 9 digitos en total</p>
+                        <p class="formulario__input-error2">Ingrese un número de télefono que no haya sido ingresado</p>
+
+                    </div>
+                    <!-- Grupo: Correo -->
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <div class="formulario__grupo-input">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" class="formulario__input" name="correo" id="correo"
+                                placeholder="Ingrese un correo electronico">
+                        </div>
+                        <p class="formulario__input-error">Ingrese un correo valido</p>
+                        <p class="formulario__input-error2">Ingrese un correo que no haya sido ingresado</p>
+
+                    </div>
+                </div> 
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                        correctamente.
+                    </p>
+                </div>
+                <!-- BOTON DE REGISTRAR -->
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button class="formulario__btn" id="registro__btn" type="submit"><i class="fa-regular fa-clipboard"></i> Registrar cliente</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Registrado correctamente!</p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="validacion.js"></script>
+
+</body>
+
+</html>

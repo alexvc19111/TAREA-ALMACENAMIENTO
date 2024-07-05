@@ -1,0 +1,164 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #DDD6CC;
+    color: #BD9240;
+}
+
+.container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registro {
+    width: 100%;
+    max-width: 500px;
+    background-color: #19222b;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.registro h1 {
+    Font-size: 30px;
+    Margin-bottom: 20px;
+    Position: relative;
+}
+
+.formulario__grupo-input {
+    Background-color: #171e27;
+    Border-radius: 3px;
+    Display: flex;
+    Align-items: center;
+    Margin: 15px 0;
+    Overflow: hidden;
+    border-radius: 10px;
+}
+
+input {
+    Background: transparent;
+    Width: 100%;
+    Border: 0;
+    Outline: none;
+    Padding: 18px 15px;
+    Color: white;
+
+}
+
+input::placeholder {
+    color: gray;
+}
+
+.formulario__grupo-input i {
+    Margin-left: 15px;
+    Color: #DDD6CC;
+}
+
+form p {
+    text-align: left;
+    Font-size: 15px;
+}
+
+Button {
+    Font-size: 15px;
+    Background-color: #B84357;
+    Color: #DDD6CC;
+    Border-radius: 5px;
+    Cursor: pointer;
+    Outline: none;
+    Border: 0;
+    Height: 30px;
+    Justify-content: center;
+    Width: 100%;
+    margin-top: 10px;
+}
+
+.inputgroup {
+    height: relative;
+}
+
+.formulario__btn:hover {
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.formulario__input-error {
+    text-align: left;
+    font-size: 10px;
+    display: none;
+    margin-bottom: 0;
+}
+
+.formulario__input-error2 {
+    text-align: left;
+    font-size: 10px;
+    display: none;
+    margin-bottom: 0;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__input-error2-activo {
+    display: block;
+}
+
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #271717;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+    margin-top: 10px;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__mensaje p {
+    margin: 0;
+}
+
+.formulario__mensaje-exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #d30101;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 1px solid #d30101;
+    border-radius: 10px;
+}
